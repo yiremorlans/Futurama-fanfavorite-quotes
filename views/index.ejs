@@ -1,0 +1,57 @@
+<!--index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Favorite Futurama Quotes</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1 data-position="header">Good news, everyone! Futurama quotes are here! 🚀</h1>
+
+    <section data-position="add-quote">
+        <h2>Add quote</h2>
+
+        <form>
+            <input class="character" type="text" placeholder="name" name="name">
+            <input class="quote" type="text" placeholder="quote" name="quote">
+            <button class="submit" type="submit">Submit</button>  
+        </form>
+    </section>
+    
+    <section data-position="update-quote">
+        <div>
+            <h2>Bender takes over!</h2>
+            <p>Replace the first Fry quote with a quote by Bender.</p>
+            <button id="update-button">Replace Fry quote</button>
+        </div>
+    </section>
+
+    <section data-position="delete-quote">
+        <div>
+            <h2>Stop Bender!</h2>
+            <p>Delete one Bender quote. Does nothing if there are no more Bender quotes.</p>
+            <button id="delete-button">Delete Bender Quote</button>
+        </div>
+        <div id="message"></div>
+    </section>
+
+    <section data-position="quotes">
+        <h2>Quotes</h2>
+        <img src="https://res.cloudinary.com/dzxqhkyqd/image/upload/v1554904133/fry.png" alt="Picture of Philip J Fry">
+        <ul class="quotes">
+            <% for(let i=0; i <quotes.length; i++) {%>
+                <li class="quote">
+                    <span class="bold"><%= quotes[i].name %></span>:
+                    <span><%= quotes[i].quote %></span>
+                </li>
+            <% } %>
+        </ul>
+        
+    </section>
+
+        <script src="/main.js"></script>
+</body>
+</html>
