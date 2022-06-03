@@ -1,9 +1,13 @@
 {
-  "name": "crud",
+  "name": "Fanfave-futurama-quotes",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "engines": {
+    "node":"18.1.0"
+  },
+  "description": "Futurama fans can now add their favorite quotes from the show.",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "author": "Yire Morlans",
