@@ -8,7 +8,7 @@ const favePort = 3000
 
 
 
-MongoClient.connect(process.env.DB_CONNECTION_STRING, { useUnifiedTopology: true })
+MongoClient.connect(process.env.DB_CONNECTION_STRING)
   .then(client => {
     console.log('Connected to Database')
     const db = client.db('futurama-quotes')
