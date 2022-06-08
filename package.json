@@ -8,6 +8,7 @@
   "description": "Fan favorite futurama quotes database",
   "main": "server.js",
   "scripts": {
+    "dev": "node server.js",
     "start": "node server.js"
   },
   "author": "Yire Morlans",
