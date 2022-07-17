@@ -1,10 +1,9 @@
-console.log('Good news everyone!')
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
 const DB_CONNECTION_STRING = require('dotenv').config()
-const favePort = 3000
+const PORT = process.env.PORT
 
 
 
@@ -68,8 +67,8 @@ MongoClient.connect(process.env.DB_CONNECTION_STRING)
         .catch(error => console.error(error))
     })
 
-    app.listen(process.env.PORT || favePort, function() {
-        console.log(`Listening in on port ${favePort}`)
+    app.listen(process.env.PORT || PORT, function() {
+        console.log(`Good news, everyone! The PORT is open!`)
     })
   })
   .catch(error => console.error(error))
