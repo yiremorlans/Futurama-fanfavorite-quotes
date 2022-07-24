@@ -3,7 +3,7 @@ Marty and Doc Brown aren't the only ones that take us back to the future. Futura
 
 **Link to project:** https://futuramafan-quotes.herokuapp.com/
 
-![Futurama quotes web app](https://github.com/yiremorlans/yiremorlans/blob/main/futuramaCRUD.gif)
+![Futurama quotes web app](https://github.com/yiremorlans/yiremorlans/blob/main/futrama.webp)
 
 ## How It's Made:
 
